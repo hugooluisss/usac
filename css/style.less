@@ -1,0 +1,70 @@
+@import "variables.less";
+@import "funciones.less";
+@import "componentes/modal.less";
+@import "componentes/validate.less";
+
+@import "vistas/login.less";
+@import "vistas/panel.less";
+
+#WindowLoad{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 3200;
+	.opacar(.80);
+	background: @bgGris;
+	color: white;
+	
+	img{
+		width: 50%;
+	}
+}
+
+.text-success{
+	color: @bgButtonPrimary !important;
+}
+
+
+.btn-primary{
+    background: @bgButtonPrimary;
+    border-color: inherit;
+    
+    &:hover{
+	    background: @bgButtonPrimary - #222;
+	    border-color: #3d8f86;
+    }
+    
+    &.btn-sm{
+	    font-size: 10px;
+    }
+}
+
+#alertify{
+    .btn{
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .btn-muted{
+        background: @bgGris;
+        color: white;
+        border: none;
+    
+        &:hover, &:focus{
+            color: white;
+        }
+    }
+    
+    .btn-primary{
+        border: none;
+        &:hover, &:focus{
+            color: white;
+        }
+    }
+}
+
+nav.footer{
+	.btn-primary{
+		font-size: 12px;
+		height: 40px;
+	}
+}
